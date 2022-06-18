@@ -2,11 +2,6 @@
   import { computed , onMounted,reactive,ref, watchEffect, } from 'vue';
   import ButtonVue from './Button.vue';
   import store from '../store/index';
-
-
-
-
-
 </script>
 
 <template>
@@ -16,9 +11,6 @@
     <input type="text" class="form-control w-25 bg-dark border-info text-light w-50" v-model="store.state.search" />
      <div class="navbar">
          <RouterLink to="/" class="nav-link text-light">Home</RouterLink>
-         <RouterLink to="/about" class="nav-link text-light">View Cart</RouterLink>
-         <RouterLink to="/cuisine/" class="nav-link text-light">Cuisine</RouterLink>
-
          <RouterLink to="/cartview" class="nav-link text-light">
          <ButtonVue>
            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">

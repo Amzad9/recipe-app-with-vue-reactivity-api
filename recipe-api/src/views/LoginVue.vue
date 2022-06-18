@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 const name = ref("");
 const email = ref("");
@@ -26,6 +26,9 @@ const userLogin = () => {
     }
   }
 };
+watch(name,()=>{
+  console.log(name.value);
+})
 
 </script>
 <template>
